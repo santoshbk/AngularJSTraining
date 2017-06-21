@@ -1,0 +1,28 @@
+<html ng-app="">
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script> 
+
+</head>
+
+<body>
+
+ENter something: <input ng-init="texting='dont scrib'" placeholder="Scrib something" type="text" ng-model="texting" />
+
+<hr/>
+<p>your text: <b>{{texting}}<b></p>
+
+
+<div ng-init="fn='one';ln='two'">
+    <strong>fn: {{fn}} </strong><hr/>
+    <strong>ln: {{ln}} </strong>
+    <hr/>
+    fn: <input type="text" ng-model="fn"/>
+    <hr/>
+    ln: <input type="text" ng-model="ln"/>
+    <hr/>
+    <strong>{{fn}} : {{ln}} </strong>
+</div>
+</body>
+
+</html>

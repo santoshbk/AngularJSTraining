@@ -1,0 +1,28 @@
+<html >
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script> 
+
+</head>
+
+<body>
+
+    <div ng-app=""  ng-init="names =['fn', 'sn', 'tn']; countries =[{a:'one', feature:'first'} , {a:'two', feature:'second'}]">
+
+        <ol>
+            <li ng-repeat="c in countries">
+                {{c.a}} :is: {{c.feature}}
+            </li>
+        </ol>
+        <ol>
+            <li ng-repeat="n in names ">
+                {{n}}
+            </li>
+        </ol>
+
+    </div>
+
+
+</body>
+
+</html>

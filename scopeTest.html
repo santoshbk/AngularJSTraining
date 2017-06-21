@@ -1,0 +1,22 @@
+<html ng-app="myApp">
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script> 
+<script src="scopeTest.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="myController">
+        First Name: <input type="text" ng-model="fn"/>
+        <hr/>
+        Last Name: <input type="text" ng-model="ln"/>
+        <hr/>
+        Full Name: {{fl()}}
+
+    </div>
+
+
+</body>
+
+</html>
