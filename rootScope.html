@@ -1,0 +1,19 @@
+<html ng-app="myApp">
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script> 
+<script src="rootScope.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="myCtrl">
+        <p>inside ctrl</p>
+       <h1><font color='red'>{{color}}</font></h1>
+       <h1><font color='grey'>{{bgColor}}</font></h1>
+
+    </div>
+<p>outside ctrl</p>
+    <h1><font color='blue'>{{color}}</font></h1>
+</body>
+</html>

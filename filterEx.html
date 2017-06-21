@@ -1,0 +1,19 @@
+<html ng-app="myApp">
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script> 
+<script src="filterEx.js"></script>
+</head>
+
+<body>
+
+    <div ng-controller="myController">
+       <ol>
+           <li ng-repeat="e in emp|orderBy:'sal'">
+               {{e.name|uppercase}} working as {{e.job|lowercase}} and earning {{e.sal|currency:"Rs."}}
+           </li>
+       </ol>
+
+    </div>
+</body>
+</html>
