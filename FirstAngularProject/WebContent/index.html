@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Woo Hoo...! Angular JS!</title>
+<script src="./js/angular.js"></script>
+<script src="./js/script.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+	<div>
+		<h2>View Persons Details</h2>
+		<br /> <input type="text" ng-model="name" /> <br />
+		<ul>
+			<li ng-repeat="person in persons | filter:name">{{person.name}}
+				, {{person.city}}</li>
+		</ul>
+	</div>
+</body>
+
+</html>
